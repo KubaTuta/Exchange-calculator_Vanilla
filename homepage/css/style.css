@@ -1,0 +1,42 @@
+html {
+    box-sizing: border-box;
+}
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+.body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px auto;
+    background-image: image(img/coins.jpg);
+}
+.form__label {
+    width: 500px; 
+    display: inline-block;
+    margin-right: 5px;
+}
+.form__fieldset {
+    width: min-content;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px auto;
+}
+.form__legend {
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+background-color: #9f676782;
+}
+.form__button {
+    background-color: #9f676782;
+    border: none;
+    border-radius: 3px;
+    width: 48%;
+}
+.form__button:hover {
+    background-color: #9f676732;
+    cursor: pointer;
+}
+.form {
+    overflow-x: auto;
+}
