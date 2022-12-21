@@ -7,7 +7,6 @@ html {
 .body {
     font-family: 'Montserrat', sans-serif;
     margin: 10px auto;
-    background-image: image(img/coins.jpg);
 }
 .form__label {
     width: 500px; 
