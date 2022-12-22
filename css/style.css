@@ -14,6 +14,8 @@ html {
     margin-right: 5px;
 }
 .form__fieldset {
+    background-image: url("../img/coins.jpg");
+    background-size: 550px;
     width: min-content;
     max-width: 500px;
     padding: 20px;
@@ -27,7 +29,7 @@ html {
 background-color: #9f676782;
 }
 .form__button {
-    background-color: #9f676782;
+    background-color: #9f6767e8;
     border: none;
     border-radius: 3px;
     width: 48%;
@@ -38,4 +40,7 @@ background-color: #9f676782;
 }
 .form {
     overflow-x: auto;
+}
+.form__lastText {
+    background-color: #9f6767e8;
 }
