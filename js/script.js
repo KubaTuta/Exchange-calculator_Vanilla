@@ -1,5 +1,5 @@
 {
-    const checkRate = (exchange) => { //checking exchange rate based on currency type
+    const checkRate = (exchange) => { 
 
         switch (exchange) {
             case ("PLN/EUR"):
@@ -30,7 +30,10 @@
                 return 1;
         };
     };
-    const toggleUnit = () => { //toggle text unit in answer
+
+    const currencyToElement = document.querySelector(".js-currencyTo");
+
+    const toggleUnit = () => { 
 
         const eurElement = document.querySelector(".js-eur");
         const gbpElement = document.querySelector(".js-gbp");
@@ -54,22 +57,28 @@
                 answerElement.innerText = "HRK";
         }
     };
+    const showAnswer = (result) => {
+        const resultElement = document.querySelector(".js-result");
+        resultElement.innerText = result.toFixed(2);
+    };
 
     const onFormSubmit = (event) => {
         event.preventDefault();
 
         const amountElement = document.querySelector(".js-amount");
-        const resultElement = document.querySelector(".js-result");
         const currencyFromElement = document.querySelector(".js-currencyFrom");
 
         const amount = +amountElement.value;
         let result = amount * checkRate(`${currencyFromElement.value}/${currencyToElement.value}`);
-        resultElement.innerText = result.toFixed(2);
 
+        showAnswer(result);
         toggleUnit();
     };
+    
+   const init = () => {
     const formElement = document.querySelector(".js-form");
-    const currencyToElement = document.querySelector(".js-currencyTo");
-
     formElement.addEventListener("submit", onFormSubmit);
+   };
+
+   init();
 }

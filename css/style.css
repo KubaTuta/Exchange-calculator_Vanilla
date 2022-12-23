@@ -5,8 +5,13 @@ html {
     box-sizing: inherit;
 }
 .body {
+    background-image: url("../img/coins.jpg");
+    background-size: stretch auto;
+    background-position: center;
     font-family: 'Montserrat', sans-serif;
     margin: 10px auto;
+    display: flex;
+    justify-content: center;
 }
 .form__label {
     width: 500px; 
@@ -14,8 +19,7 @@ html {
     margin-right: 5px;
 }
 .form__fieldset {
-    background-image: url("../img/coins.jpg");
-    background-size: 550px;
+    background-color: rgb(240, 237, 232);
     width: min-content;
     max-width: 500px;
     padding: 20px;
