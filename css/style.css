@@ -44,7 +44,8 @@ html {
     background-color: #9f6767e8;
     border: none;
     border-radius: 3px;
-    width: 49.5%;
+    width: 48%;
+    
 }
 
 .form__button:hover {

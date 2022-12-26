@@ -19,51 +19,52 @@
 
 <body class="body">
     <div class="flex">
-    <p>
-    <form class="form js-form">
-        <fieldset class="form__fieldset">
-            <legend class="form__legend">
-                Kalkulator walut
-            </legend>
-            <label>Wybierz pary walut</label>
-            <p>
-                <label class="form__label">Posiadana</label>
-            <p>
-                <select class="form__currencyFrom js-currencyFrom">
-                    <option class="form__pln js-pln" value=PLN>PLN</option>
-                    <option class="form__eur js-eur" value=EUR>EUR</option>
-                    <option class="form__gbp js-gbp" value=GBP>GBP</option>
-                    <option class="form__hrk js-hrk" value=HRK>HRK</option>
-                </select>
-            </p>
-            </p>
-            <label class="form__label">Pożądana</label>
-            <p>
-                <select class="form__currencyTo js-currencyTo">
-                    <option class="form__eur js-eur" value=EUR>EUR</option>
-                    <option class="form__gbp js-gbp" value=GBP>GBP</option>
-                    <option class="form__hrk js-hrk" value=HRK>HRK</option>
-                    <option class="form__pln js-pln" value=PLN>PLN</option>
-                </select>
-            </p>
+        <p>
+        <form class="form js-form">
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">
+                    Kalkulator walut
+                </legend>
+                <label>Wybierz pary walut</label>
+                <p>
+                    <label class="form__label">Posiadana</label>
+                <p>
+                    <select class="form__currencyFrom js-currencyFrom">
+                        <option class="form__pln js-pln" value=PLN>PLN</option>
+                        <option class="form__eur js-eur" value=EUR>EUR</option>
+                        <option class="form__gbp js-gbp" value=GBP>GBP</option>
+                        <option class="form__hrk js-hrk" value=HRK>HRK</option>
+                    </select>
+                </p>
+                </p>
+                <label class="form__label">Pożądana</label>
+                <p>
+                    <select class="form__currencyTo js-currencyTo">
+                        <option class="form__eur js-eur" value=EUR>EUR</option>
+                        <option class="form__gbp js-gbp" value=GBP>GBP</option>
+                        <option class="form__hrk js-hrk" value=HRK>HRK</option>
+                        <option class="form__pln js-pln" value=PLN>PLN</option>
+                    </select>
+                </p>
 
-            <p>
-                <label>Wpisz ilość posiadanej waluty:</label>
-            </p>
-            <p>
-                <input min="0" class="form__amount js-amount" type="number" required placeholder="wpisz wartość">
-            </p>
-            <p>
-                <button type="submit" class="form__button">Oblicz</button>
-                <button type="reset" class="form__button">Wyczyść</button>
-            </p>
-            <p>
-                Otrzymasz <strong class="form__result js-result"></strong> <span class="form__answer js-answer"></span>
-            </p>
-        </fieldset>
-    </form>
-    </p>
-</div>
+                <p>
+                    <label>Wpisz ilość posiadanej waluty:</label>
+                </p>
+                <p>
+                    <input min="0" class="form__amount js-amount" type="number" required placeholder="wpisz wartość">
+                </p>
+                <p>
+                    <button type="submit" class="form__button">Oblicz</button>
+                    <button type="reset" class="form__button">Wyczyść</button>
+                </p>
+                <p>
+                    Otrzymasz <strong class="form__result js-result"></strong> <span
+                        class="form__answer js-answer"></span>
+                </p>
+            </fieldset>
+        </form>
+        </p>
+    </div>
 </body>
 
 </html>
